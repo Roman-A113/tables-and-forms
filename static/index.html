@@ -11,11 +11,13 @@
     <main>
         <h1>Найди себе друга!</h1>
         <form action="/pets/orders" method="post">
+            <label>Тип животного
             <select name="petType" id="petType">
                 <option value="cat">Кошка</option>
                 <option value="dog">Собака</option>
                 <option value="tiger">Тигр</option>
             </select>
+        </label>
             <label>
                 <input type="radio" name="gender" value="boy" checked> Мужчина
             </label>
@@ -25,7 +27,9 @@
             <label>
                 <input type="radio" name="gender" value="none"> Не решил еще
             </label>
+            <label> Цвет
             <input type="color" name="eyeColor">
+            </label>
             <input type="number" name="tailLength" min="7" max="120" value="7">
             <input type="text" name="name" minlength="3" maxlength="50">
             <input type="date" name="dateOfBirth">
