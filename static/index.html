@@ -30,8 +30,8 @@
             <input type="text" name="name" minlength="3" maxlength="50">
             <input type="date" name="dateOfBirth">
             <input type="email" name="email">
-            <input type="tel" name="phone">
-            <input type="text" name="rules">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="89641823040">
+            <input type="radio" name="rules" checked value="true">
             <button type="submit">Отправить</button>
         </form>
 
