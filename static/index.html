@@ -11,13 +11,14 @@
     <main>
         <h1>Найди себе друга!</h1>
         <form action="/pets/orders" method="post">
-            <label>Тип животного
-            <select name="petType" id="petType">
-                <option value="cat">Кошка</option>
-                <option value="dog">Собака</option>
-                <option value="tiger">Тигр</option>
-            </select>
-        </label>
+            <label>
+                Тип животного
+                <select name="petType" id="petType">
+                    <option value="cat">Кошка</option>
+                    <option value="dog">Собака</option>
+                    <option value="tiger">Тигр</option>
+                </select>
+            </label>
             <label>
                 <input type="radio" name="gender" value="boy" checked> Мужчина
             </label>
@@ -27,15 +28,34 @@
             <label>
                 <input type="radio" name="gender" value="none"> Не решил еще
             </label>
-            <label> Цвет
-            <input type="color" name="eyeColor">
+            <label>
+                Цвет
+                <input type="color" name="eyeColor">
             </label>
-            <input type="number" name="tailLength" min="7" max="120" value="7">
-            <input type="text" name="name" minlength="3" maxlength="50">
-            <input type="date" name="dateOfBirth">
-            <input type="email" name="email">
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="89641823040">
-            <input type="radio" name="rules" checked value="true">
+            <label>
+                Длина хвоста
+                <input type="number" name="tailLength" min="7" max="120" value="7">
+            </label>
+            <label>
+                Имя
+                <input type="text" name="name" minlength="3" maxlength="50">
+            </label>
+            <label>
+                Дата
+                <input type="date" name="dateOfBirth">
+            </label>
+            <label>
+                Почта
+                <input type="email" name="email">
+            </label>
+            <label>
+                Номер телефона
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="89641823040">
+            </label>
+            <label>
+                С правилами ознакомлен
+                <input type="checkbox" name="rules" checked value="true">
+            </label>
             <button type="submit">Отправить</button>
         </form>
 
